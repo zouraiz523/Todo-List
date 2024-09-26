@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+</head>
+<body>
+ 
+<div class="iphone">
+	<div class="notch"></div>
+	<div class="status-bar">
+		<span class="time">9:11</span>
+		<div class="icons">
+			<span>📶</span>
+			<span>📊</span>
+			<span>🔋</span>
+		</div>
+	</div>
+	<button id="theme-toggle"><i class="fa-regular fa-moon"></i></button>
+	<div class="app-container">
+		<h1>Todo List</h1>
+		<form id="task-form">
+			<input type="text" id="task-input" placeholder="Add a new task" required>
+			<button type="submit" id="add-btn">Add</button>
+			<button type="button" id="reset-btn">Reset</button>
+		</form>
+		<ul id="task-list" class="task-list"></ul>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
